@@ -1,0 +1,28 @@
+package de.hs_flensburg.ads;
+
+public class Arrays {
+
+
+    static Object[] extendedCopyOf(Object[] array) {
+
+        Object[] objects = new Object[array.length * 2];
+
+        for (var i = 0; i < array.length; i++) {
+            objects[i] = array[i];
+        }
+        return objects;
+
+
+    }
+
+    static void shiftRight(Object[] array, int start, int end) {
+
+
+        for (var i = end; i >= start; i--) {
+            array[i + 1] = array[i];
+
+        }
+
+    }
+
+}
